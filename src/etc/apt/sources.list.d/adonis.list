@@ -1,0 +1,5 @@
+deb http://repository.adonislinux.com/ testing main
+deb-src http://repository.adonislinux.com/ testing main
+
+deb http://repository.adonislinux.com/ testing adonis
+deb-src http://repository.adonislinux.com/ testing adonis

@@ -1,0 +1,13 @@
+Source: adonis-apt
+Section: admin
+Priority: optional
+Maintainer: Bobby Martin <bobb.mrtn@gmail.com>
+Build-Depends: cdbs, debhelper (>= 5.0.0)
+Standards-Version: 3.7.2
+
+Package: adonis-apt
+Architecture: all
+Depends: 
+Description: Configures apt for use with Adonis Linux repositories
+ Configures apt for use with Adonis Linux repositories.
+
