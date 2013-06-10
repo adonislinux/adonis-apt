@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+PACKAGE="adonis-apt"
+
+DIVERT_FILES="
+/etc/apt/sources.list"
+
+if [ "$1" = "install" -o "$1" = "upgrade" ] ; then
+    for file in $DIVERT_FILES; do
+        dpkg-divert --add --package $PACKAGE --divert $file.non-adonis $file;
+	rm -f $file;
+    done;
+fi
+#DEBHELPER#
+
+exit 0
